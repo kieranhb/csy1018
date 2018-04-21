@@ -1,0 +1,87 @@
+
+/* This is my style sheet used to control how everything on my webpage appears on the users screen */
+body{
+    font-family: 'Comfortaa', cursive;
+      font-size:15px;
+      background-color: rgb(58, 83, 116);
+      color:#000000;
+    text-align: center;
+  }
+  
+  footer{
+    font-size: 8px;
+  }
+  nav{
+      height:40px;
+      width:900px;
+    margin-left: 350px;
+      margin-right: 400px;;
+  }
+  nav ul{
+      list-style:none;
+      padding-left:0;
+  
+  }
+  
+  nav li{
+      font-family: 'Comfortaa', cursive;
+      text-transform:uppercase;
+      float:left;
+      font-weight:bold;
+  
+  }
+  
+  nav a {
+      color:black;
+      text-decoration:none;
+      background-color:rgb(58, 83, 116);
+      padding:5px 40px;
+  
+  }
+  
+  .home_logo{
+    width: 300px;
+    margin-left: 500px;
+      margin-right: 500px;;
+  }
+
+  .twitter_logo{
+    width: 600px;
+
+  }
+  
+  acknowledgements{
+    font-style: italic;
+  
+  }
+  
+  images{
+    display: inline-grid;
+    flex: auto;
+  }
+  
+  bio{
+    font-family: 'Comfortaa', cursive;
+    color:black;
+    margin-left: 550px;
+    margin-right: 550px;
+   
+  }
+ 
+  .flexcontainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+  }
+
+.article {
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 250px;
+   
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Kieran Harris-Brown -->
+<html>
+
+	<head>
+		<title>Contact</title>
+		<link rel="stylesheet" href="style\styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+	</head>
+	<body>
+		<header>
+		<div id="header">
+			<img src="images\kieran.jpg" alt="Kieran" class="home_logo" />
+		</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="social.html">Social</a></li>
+                    <li><a href="mgp.html">Mgp</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+        </header>
+        <!--below is the code for the form-->
+	    <div id="form">
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                  <h2 class="contact_form">Name</h2>
+                  <br />
+                  <input type="text" name="name" class="contact_form_name">
+                  <br />
+                  <br />
+                  <h2 class="contact_form">E-mail</h2>
+                  <br />
+                  <input type="text" name="email" class="contact_form_email">
+                  <br />
+                  <br />
+                  <h2 class="contact_form">Add message here...</h2>
+                  <br />
+                  <input type="text" name="message" class="contact_form_message">
+                  <br />
+                  <br />
+                  <input type="submit" value="Submit" class="contact_form_button">
+
+               </form>
+              <div id="map" style="width:300px;height:300px;background:rgb(19, 52, 75)"></div>
+              <!--below is the script for the google map-->
+              <script>
+              function myMap() {
+              var mapOptions = {
+                  center: new google.maps.LatLng(51.5, -0.12),
+                  zoom: 10,
+                  mapTypeId: google.maps.MapTypeId.HYBRID
+              }
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+              }
+
+              </script>
+                            <!--this is the code to load the actual map from google.-->               
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIMsUKcrT0LQcTuak2vm-gsH4AUDkjFc&callback=myMap"></script> 
+          </div>
+         
+		<footer>
+		<div id="footer">
+			<p>This website was designed by Kieran Harris-Brown
+			</p>
+		</div>
+		</footer>
+</body>
+</html>
